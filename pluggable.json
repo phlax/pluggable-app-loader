@@ -1,0 +1,6 @@
+{"js": {
+    "installs": {
+	"@pluggable/app-loader": "latest"
+    }
+}
+}

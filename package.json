@@ -1,0 +1,57 @@
+{
+    "version": "0.0.13",
+    "devDependencies": {
+        "@webpack-contrib/defaults": "^2.4.0",
+        "eslint-plugin-import": "^2.2.0",
+        "standard-version": "^4.0.0",
+        "@webpack-contrib/eslint-config-webpack": "^2.0.4",
+        "babel-polyfill": "^6.0.0",
+        "del-cli": "^1.0.0",
+        "babel-plugin-transform-object-rest-spread": "^6.0.0",
+        "nsp": "^2.6.0",
+        "del": "^3.0.0",
+        "jest": "^21.0.0",
+        "eslint-config-webpack": "^1.0.0",
+        "conventional-github-releaser": "^3.1.0",
+        "pre-commit": "^1.0.0",
+        "prettier": "^1.13.4",
+        "@commitlint/cli": "^7.0.0",
+        "webpack": "^4.29.4",
+        "babel-cli": "^6.0.0",
+        "lint-staged": "^4.0.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "babel-preset-env": "^1.0.0",
+        "@commitlint/config-conventional": "^7.0.1",
+        "cross-env": "^5.0.0",
+        "eslint": "^4.0.0",
+        "husky": "^0.14.3",
+        "babel-jest": "^21.0.0"
+    },
+    "name": "@pluggable/app-loader",
+    "scripts": {
+        "start": "npm run build -- -w",
+        "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js' --copy-files"
+    },
+    "author": "phlax",
+    "description": "pluggavle loader module for webpack",
+    "engines": {
+        "node": ">= 6.9.0 < 7.0.0 || >= 8.9.0"
+    },
+    "peerDependencies": {
+        "webpack": "^3.0.0 || ^4.0.0-alpha.0 || ^4.0.0"
+    },
+    "files": [
+        "src"
+    ],
+    "keywords": [
+        "webpack"
+    ],
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "dependencies": {
+        "loader-utils": "^1.0.0",
+        "@webpack-contrib/schema-utils": "^1.0.0-beta.0"
+    },
+    "main": "src/cjs.js"
+}
